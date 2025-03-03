@@ -1,0 +1,204 @@
+body {
+    font-family: "微軟正黑體", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color: #a50000;
+    /* height: 80px; */
+    padding: 0.5rem 0;
+}
+
+.box {
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+    /*flex屬性中 水平均分間距*/
+}
+
+.align-center {
+    align-items: center;
+    /*flex屬性 垂直對齊的置中*/
+}
+
+.align-end {
+    align-items: flex-end;
+    /*flex屬性 垂直對齊的下緣*/
+}
+
+nav a:not(h1 a) {
+    color: #fff;
+    padding: 0 1rem;
+    /*r=root根元素=<html> 1rem=16px*/
+}
+
+h1 a {
+    width: 180px;
+    display: inline-block;
+}
+
+#important-area h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#important-area p,
+.section-heading p {
+    color: #474747;
+}
+
+#important-area .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #a50000;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+    margin-right: 1rem;
+}
+
+nav ul+div a:last-of-type {
+    padding-right: 0;
+}
+
+.box-1 {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 0;
+}
+
+.section-heading h2 {
+    font-size: 1.6rem;
+    color: #a50000;
+    margin-bottom: 0.5rem;
+}
+
+.section-heading {
+    border-left: 5px solid #a50000;
+    padding-left: 0.5rem;
+}
+
+.more-btn a {
+    color: #a50000;
+}
+
+article:not(article:first-of-type) {
+    padding-top: 4rem;
+}
+
+.courses-content>ul a {
+    color: #000;
+}
+
+.courses-content>ul {
+    border-bottom: 1px solid #474747;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.courses-content>ul li {
+    padding: 0 1rem 0.5rem;
+}
+
+.courses-content>ul li.active {
+    border-bottom: 3px solid #a50000;
+}
+
+.courses-content>ul li.active a {
+    color: #00008b;
+}
+
+.courses-content section {
+    flex: 0 0 25%;
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%; */
+    padding: 0 0.5rem;
+}
+
+.border {
+    border: 1px solid #474747;
+}
+
+.content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.content ul {
+    list-style-type: square;
+    line-height: 2;
+}
+
+.content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.link-btn li:nth-of-type(1) {
+    background-color: #474747;
+}
+
+.link-btn li:nth-of-type(2) {
+    background-color: #a50000;
+}
+
+.link-btn li a {
+    color: #fff;
+}
+
+.link-btn li{
+    flex: 0 0 50%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.courses-img:hover img{
+    transform: scale(1.2);
+}
+
+.courses-img{
+    overflow: hidden;
+}
+
+.courses-img img{
+    transition: all 0.5s;
+}
