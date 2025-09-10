@@ -1,0 +1,22 @@
+{
+  "name": "html_mt",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html --dist-dir build --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "parcel": "^2.8.2"
+  }
+}
