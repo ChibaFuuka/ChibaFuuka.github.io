@@ -112,7 +112,7 @@ header{
         width: 80%;
         margin: 0 auto; /* 塊狀元素有設定寬度時左右置中的方法 */
         position: absolute;
-        /* bottom: -75px; */
+        bottom: -75px;
         left: 0;
         right: 0;
         display: flex;
