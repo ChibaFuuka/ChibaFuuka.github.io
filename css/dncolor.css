@@ -11,3 +11,10 @@
 .bgcolor-3 {background-color: #F2DAAC;}
 .bgcolor-4 {background-color: #402606;}
 .bgcolor-5 {background-color: #F2F2F2;}
+
+/* color透明0.8 */
+.rgba-1 {background-color: rgba(255, 158, 176, 0.8);}
+.rgba-2 {background-color: rgba(255, 205, 112, 0.8);}
+.rgba-3 {background-color: #F2DAAC;}
+.rgba-4 {background-color: #402606;}
+.rgba-5 {background-color: #F2F2F2;}
