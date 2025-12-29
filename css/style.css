@@ -26,7 +26,6 @@ header{
     padding: 10px 30px;
     position: fixed;
     width: 100%;
-    background-color: rgb(242, 242, 242);
     box-sizing: border-box;
     /* 方法一：刪掉width 加上下方三行
     left: 0;
