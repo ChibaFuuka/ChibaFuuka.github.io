@@ -47,9 +47,12 @@ a {
         border: 0;
         background-color: transparent;
     }
-
+    #intro{
+        top: 1400px;
+    }
     .slide {
         top: 60px;
     }
+
 
 }
