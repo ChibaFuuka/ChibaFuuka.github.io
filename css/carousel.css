@@ -1,0 +1,109 @@
+.winter-carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winter-carousel {
+    width: 500px;
+    /* 你可以保留或改成 % */
+    aspect-ratio: 5 / 4;
+    /* ★ 關鍵 */
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.winter-content {
+    height: 100%;
+    border: 4px solid #ffb7c4;
+    border-radius: 30px;
+    background-color: #ffb7c4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+    border: 4px solid #ffb7c4;
+    border-radius: 30px;
+    background-color: #ffb7c4;
+}
+
+.winter-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    /* ★ 關鍵 */
+    border-radius: 26px;    /* 稍小於外框，避免吃邊 */
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    /* 建議跟控制列一致 */
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    outline: 2px solid #ff7a9e;
+    outline-offset: 2px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #ffcd70 !important;
+    border-color: #ffcd70;
+}
+
+.btn img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.winter-indicators img {
+    width: 20px;
+}
+
+.winter-indicators {
+    display: flex;
+    gap: 8px;
+}
+
+.indicator {
+    background: none;
+    border: none;
+    padding: 0 6px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.indicator.active {
+    opacity: 1;
+}
+
+.indicator img {
+    pointer-events: none;
+}
+
+.winter-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.winter-controls .btn {
+    width: 40px;
+    height: 40px;
+}

@@ -16,6 +16,15 @@ a:hover {
     color: #ab732e;
 }
 
+h2{
+    text-align: center;
+}
+
+.discount-h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -27,6 +36,12 @@ footer {
 }
 
 @media (max-width: 429px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+    #mobile-carousel {
+        display: block;
+    }
     .close {
         display: none;
     }
@@ -184,6 +199,12 @@ footer {
 }
 
 @media (min-width: 430px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+    #mobile-carousel {
+        display: block;
+    }
     .close {
         display: none;
     }
@@ -350,30 +371,12 @@ footer {
 }
 
 @media (min-width: 947px) {
-    .m-banner1 {
-        display: none;
-    }
-
-    .m-banner2 {
-        display: none;
-    }
-
-    .m-banner3 {
-        display: none;
-    }
-
-    .banner1 {
+    #carouselExampleIndicators {
         display: block;
     }
-
-    .banner2 {
-        display: block;
+    #mobile-carousel {
+        display: none;
     }
-
-    .banner3 {
-        display: block;
-    }
-
     .m-nav {
         display: none;
     }
@@ -501,7 +504,12 @@ footer {
 }
 
 @media (min-width: 1200px) {
-
+    #carouselExampleIndicators {
+        display: block;
+    }
+    #mobile-carousel {
+        display: none;
+    }
     .menu-icon {
         display: none;
     }
