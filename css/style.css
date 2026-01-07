@@ -61,18 +61,18 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 2000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    height: var(--header-height);
+    padding: 20px;
+    height: 80px;
     background-color: #fff;
 }
 
 /* 內容下推 */
 .body-contents {
-    margin-top: var(--header-height);
+    margin-top: 60px;
 }
 
 #carouselExampleIndicators {
@@ -81,6 +81,11 @@ header {
 
 #mobile-carousel {
     display: none;
+}
+
+.discount-h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .ks {
@@ -134,12 +139,50 @@ header {
     background-color: #fff5f7;
 }
 
+.up-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffcd70;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.up-to-top img {
+    width: 36px;
+    height: 36px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 14px;
+    background-color: #f298a9;
+}
+
 @media (max-width: 946px) {
     :root {
-        --header-height: 50px;
+        --header-height: 60px;
     }
 
     /* 行動版導覽列（預設隱藏） */
+
+    #mobileNav {
+        display: none;
+    }
+
+    #mobileNav.active {
+        display: flex;
+    }
+
+
     .mobile-nav {
         position: fixed;
         top: 0;
@@ -148,7 +191,6 @@ header {
         height: 100vh;
         background: rgba(255, 255, 255, 0.95);
         z-index: 1000;
-        display: none;
     }
 
     .mobile-nav-inner {
@@ -159,14 +201,6 @@ header {
         align-items: center;
         width: 50%;
         margin: 0 auto;
-    }
-
-    .mobile-nav-inner>img{
-        position: fixed;
-        top: 40px;
-        left: auto;
-        width: 220px;
-        margin-bottom: 40px;
     }
 
     .mobile-nav a {
@@ -203,9 +237,6 @@ header {
     }
 
     .menu-icon {
-        position: fixed;
-        top: 10px;
-        right: 10px;
         z-index: 1001;
 
         display: flex;
@@ -266,15 +297,15 @@ header {
     .header-right {
         display: none;
     }
-
-    .menu-icon {
-        display: block;
-    }
 }
 
 @media (min-width: 947px) {
     :root {
         --header-height: 58px;
+    }
+
+    .mobile-nav-inner>img {
+        display: none;
     }
 
     #carouselExampleIndicators {

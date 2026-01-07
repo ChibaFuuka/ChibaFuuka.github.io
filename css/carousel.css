@@ -1,4 +1,12 @@
 
+#discount {
+    padding: 20px;
+    text-align: center;
+}
+
+.winter-carousel-container {
+    width: 100%;
+}
 
 .winter-carousel {
     width: 40%;
