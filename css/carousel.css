@@ -1,11 +1,7 @@
-.winter-carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .winter-carousel {
-    width: 45%;
+    width: 40%;
     /* 你可以保留或改成 % */
     aspect-ratio: 5 / 4;
     /* ★ 關鍵 */
@@ -28,9 +24,6 @@
     font-weight: bold;
     line-height: 100px;
     text-align: center;
-    border: 4px solid #ffb7c4;
-    border-radius: 30px;
-    background-color: #ffb7c4;
 }
 
 .winter-content img {
@@ -40,7 +33,7 @@
     border-radius: 26px;    /* 稍小於外框，避免吃邊 */
 }
 
-.btn {
+.winter-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,14 +50,14 @@
     background-color: white;
 }
 
-.btn:focus,
-.btn:focus-visible {
+.winter-btn:focus,
+.winter-btn:focus-visible {
     outline: none !important;
     box-shadow: 0 0 0 2px #ffcd70 !important;
     border-color: #ffcd70;
 }
 
-.btn img {
+.winter-btn img {
     display: block;
     width: 20px;
     height: 20px;

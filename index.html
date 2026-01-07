@@ -27,59 +27,20 @@
             </div>
         </nav>
 
-        <div class="m-nav">
-            <div class="mobile-nav">
-                <button class="close"><img src="./img/icons/x-circle-fill.svg" alt=""></button>
-                <img src="./img/logo.svg" width="220" alt="logo" title="logo">
-
-                <hr>
-
-                <span><a href="#intro" class="color-4">甜心圈圈</a></span>
-                <span><a href="#discount" class="color-4">限定優惠</a></span>
-                <span><a href="#info" class="color-4">分店資訊</a></span>
-                <span><a href="#franchise" class="color-4">加盟聯繫</a></span>
-
-                <hr>
-
-                <span id="mobile-social">
-                    <button><a href="https://line.me/ti/p/o3JaCVcvXF" target="_blank">
-                            <img src="./img/icons/line.svg" alt="line">
-                        </a></button>
-                    <button><a href="https://www.facebook.com/share/1D6eRnRGKu/" target="_blank">
-                            <img src="./img/icons/facebook.svg" alt="">
-                        </a></button>
-                    <button><a href="https://www.instagram.com/handtiantianquan?igsh=dzR0dXFqMnp3dnRt" target="_blank">
-                            <img src="./img/icons/instagram.svg" alt="ig">
-                        </a></button>
-                    <button><a href="https://www.threads.com/@handtiantianquan" target="_blank">
-                            <img width="" src="./img/icons/threads.svg" alt="threads">
-                        </a></button>
-                </span>
-
-                <hr>
-                <span class="m-tel"><!-- 訂購專線 -->
-                    <span class="color-4">訂購專線：</span>
-                    <a href="tel:+886-916716219">
-                        0916716219
-                    </a>
-            </div>
-
-        </div>
-
         <div class="header-right">
             <span id="social">
-                <button><a href="https://line.me/ti/p/o3JaCVcvXF" target="_blank">
-                        <img src="./img/icons/line.svg" alt="line">
-                    </a></button>
-                <button><a href="https://www.facebook.com/share/1D6eRnRGKu/" target="_blank">
-                        <img src="./img/icons/facebook.svg" alt="">
-                    </a></button>
-                <button><a href="https://www.instagram.com/handtiantianquan?igsh=dzR0dXFqMnp3dnRt" target="_blank">
-                        <img src="./img/icons/instagram.svg" alt="ig">
-                    </a></button>
-                <button><a href="https://www.threads.com/@handtiantianquan" target="_blank">
-                        <img width="" src="./img/icons/threads.svg" alt="threads">
-                    </a></button>
+                <a href="https://line.me/ti/p/o3JaCVcvXF" target="_blank">
+                    <img src="./img/icons/line.svg" alt="line">
+                </a>
+                <a href="https://www.facebook.com/share/1D6eRnRGKu/" target="_blank">
+                    <img src="./img/icons/facebook.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/handtiantianquan?igsh=dzR0dXFqMnp3dnRt" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="ig">
+                </a>
+                <a href="https://www.threads.com/@handtiantianquan" target="_blank">
+                    <img width="" src="./img/icons/threads.svg" alt="threads">
+                </a>
                 <button class="btn-tel">
                     <a href="tel:+886-916716219" target="_blank">
                         <img src="./img/icons/telephone-forward-fill.svg" alt="tel">
@@ -93,11 +54,49 @@
                 </a>
             </span>
         </div>
-        <!-- 行動選單 -->
-        <button class="menu-icon">
-            <img src="./img/icons/list.svg" alt="">
-        </button>
     </header>
+
+
+    <!-- 行動選單 -->
+    <button class="menu-icon" id="menuToggle">
+        <img src="./img/icons/list.svg" class="icon-hamburger" alt="menu">
+        <img src="./img/icons/x.svg" class="icon-close" alt="close">
+    </button>
+    <!-- 行動版直向導覽列 -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+            <img src="./img/logo.svg" alt="">
+            <div class="m-nav-a">
+                <a href="#intro">甜心圈圈</a>
+                <a href="#discount">限定優惠</a>
+                <a href="#info">分店資訊</a>
+                <a href="#franchise">加盟聯繫</a>
+            </div>
+
+            <div class="mobile-nav-social">
+                <a href="https://line.me/ti/p/o3JaCVcvXF" target="_blank">
+                    <img src="./img/icons/line.svg" alt="">
+                </a>
+                <a href="https://www.facebook.com/share/1D6eRnRGKu/" target="_blank">
+                    <img src="./img/icons/facebook.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/handtiantianquan" target="_blank">
+                    <img src="./img/icons/instagram.svg" alt="">
+                </a>
+                <a href="https://www.threads.com/@handtiantianquan" target="_blank">
+                    <img width="" src="./img/icons/threads.svg" alt="threads">
+                </a>
+            </div>
+
+            <a class="mobile-nav-tel" href="tel:+886-916716219">
+                訂購專線：0916-716-219
+            </a>
+
+        </div>
+    </div>
+
+
+
 
     <div class="body-contents">
         <!-- banner -->
@@ -173,36 +172,37 @@
         </div>
 
         <!-- 限定優惠 -->
+        <div id="discount">
+            <h2 class="discount-h2 color-4"><strong>冬季限定~~新鮮草莓口味</strong></h2>
 
-        <h2 id="discount" class="discount-h2 color-4"><strong>冬季限定~~新鮮草莓口味</strong></h2>
-
-        <!-- 季節限定輪播 -->
-        <div class="winter-carousel-contaoner">
-            <div class="winter-carousel">
-                <div class="winter-container">
-                    <div class="winter-content jpg1"><img src="./img/div2/A.jpg" alt=""></div>
-                    <div class="winter-content jpg2"><img src="./img/div2/B.jpg" alt=""></div>
-                    <div class="winter-content jpg3"><img src="./img/div2/C.jpg" alt=""></div>
-                    <div class="winter-content jpg4"><img src="./img/div2/D.jpg" alt=""></div>
-                    <div class="winter-content jpg5"><img src="./img/div2/E.jpg" alt=""></div>
+            <!-- 季節限定輪播 -->
+            <div class="winter-carousel-container">
+                <div class="winter-carousel">
+                    <div class="winter-container">
+                        <div class="winter-content jpg1"><img src="./img/div2/A.jpg" alt=""></div>
+                        <div class="winter-content jpg2"><img src="./img/div2/B.jpg" alt=""></div>
+                        <div class="winter-content jpg3"><img src="./img/div2/C.jpg" alt=""></div>
+                        <div class="winter-content jpg4"><img src="./img/div2/D.jpg" alt=""></div>
+                        <div class="winter-content jpg5"><img src="./img/div2/E.jpg" alt=""></div>
+                    </div>
                 </div>
-            </div>
-            <div class="winter-controls">
-                <button type="button" class="btn btn-prev">
-                    <img src="/img/icons/chevron-compact-left.svg" alt="">
-                </button>
+                <div class="winter-controls">
+                    <button type="button" class="winter-btn btn-prev">
+                        <img src="/img/icons/chevron-compact-left.svg" alt="">
+                    </button>
 
-                <span class="winter-indicators">
-                    <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
-                    <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
-                    <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
-                    <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
-                    <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
-                </span>
+                    <span class="winter-indicators">
+                        <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
+                        <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
+                        <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
+                        <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
+                        <button type="button" class="indicator"><img src="./img/icons/circle-fill.svg" alt=""></button>
+                    </span>
 
-                <button type="button" class="btn btn-next">
-                    <img src="/img/icons/chevron-compact-right.svg" alt="">
-                </button>
+                    <button type="button" class="winter-btn btn-next">
+                        <img src="/img/icons/chevron-compact-right.svg" alt="">
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -292,6 +292,7 @@
     crossorigin="anonymous"></script>
 
 <script src="./js/carousel.js"></script>
+<script src="./js/index.js"></script>
 
 </html>
 
